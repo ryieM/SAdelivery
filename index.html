@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มสั่งอาหาร(ตัวอย่าง)</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<header class="header">
+    <div class="logo">Delivery</div>
+    <nav class="nav">
+        <a href="inputdes.html">Input Description</a>
+        <a href="https://drive.google.com/file/d/15FgRFHXHTc6yY51btdrwAQE0LRiLwcQN/view?usp=sharing" target="_blank">Input Design</a>
+        <a href="output.html">Output Design</a>
+        <a href="index.html">UI Design(Input)</a>
+    </nav>
+    
+</header>
+<body>
+
+    <h1>ฟอร์มสั่งอาหาร(ตัวอย่าง)</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="restaurant">ร้านอาหาร:</label>
+            <select id="restaurant" name="restaurant" required>
+                <option value="">-- เลือกร้านอาหาร --</option>
+                <option value="1">ร้านที่ 1</option>
+                <option value="2">ร้านที่ 2</option>
+                <option value="3">ร้านที่ 3</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="food">เมนู:</label>
+            <select id="food" name="food" required>
+                <option value="">-- เลือกอาหาร --</option>
+                <option value="1">หมูกรอบ</option>
+                <option value="2">ไข่เจียว</option>
+                <option value="3">กระเพรา</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">จำนวน:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">ที่อยู่จัดส่ง:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="instructions">หมายเหตุเพิ่มเติม:</label>
+            <textarea id="instructions" name="instructions" rows="2"></textarea>
+        </div>
+
+        <button type="submit">ยืนยันการสั่ง</button>
+    </form>
+
+</body>
+</html>
